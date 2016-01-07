@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>mixedfeelings.ridetherapid</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>0CA74C7F-C1FA-48FE-B205-279D71D29B66</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7764B665-97A3-43EC-BFB6-281599757FE5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>8B8D9701-80F2-403B-82E7-F0E7AAE67D70</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0CA74C7F-C1FA-48FE-B205-279D71D29B66</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>George Wietor</string>
+	<key>description</key>
+	<string>Find the next time for each bus stop in Grand Rapids, MI</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Ride the Rapid</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>keyword</key>
+				<string>rtr</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading routes...</string>
+				<key>script</key>
+				<string>php -f rrapid.php "{query}"</string>
+				<key>subtext</key>
+				<string>Next Bus times for The Rapid transit system in Grand Rapids, MI</string>
+				<key>title</key>
+				<string>Ride the Rapid</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8B8D9701-80F2-403B-82E7-F0E7AAE67D70</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Reminder added!</string>
+				<key>title</key>
+				<string>Ride the Rapid</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7764B665-97A3-43EC-BFB6-281599757FE5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set theQuery to "{query}"
+set theDate to date theQuery 
+set dueDate to theDate - (15 * minutes)
+
+tell application "Reminders"
+	make new reminder with properties {name:"Catch  bus at " &amp; theQuery, due date:dueDate}
+end tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0CA74C7F-C1FA-48FE-B205-279D71D29B66</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0CA74C7F-C1FA-48FE-B205-279D71D29B66</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>7764B665-97A3-43EC-BFB6-281599757FE5</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>8B8D9701-80F2-403B-82E7-F0E7AAE67D70</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://george.wietor.com</string>
+</dict>
+</plist>
