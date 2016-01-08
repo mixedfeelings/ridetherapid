@@ -22,6 +22,5 @@ Ride the Rapid uses the keyword "rtr" to browse The Rapid's schedule of upcoming
 Roadmap
 ------------
 * incorporate stop data from [data.grcity.us](http://data.grcity.us/dataset?q=gtfs "data")
-* search for stops directly, with validation, rather than browse
-		ex. "rtr 7979"
+* search for stops directly, with validation, rather than browse - ex. "rtr 7979"
 * specify alert timing for reminder
