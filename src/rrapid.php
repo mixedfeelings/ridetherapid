@@ -1,8 +1,6 @@
 <?php
 //include('simple_html_dom.php');
-$expiration = 2; //all searches will be kept in cache for 2 hours making every renewed search instant
-$split_symbol = " : "; //this is the string that goes between the category and the rest of the query
-//$min_query = 2; //this means that at 3 characters and lower, the query won't start. This makes the workflow faster.
+$split_symbol = " : ";
 $route = 0;
 
 require_once('workflows.php');
