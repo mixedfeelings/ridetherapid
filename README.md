@@ -7,7 +7,6 @@ Alfred workflow for browsing upcoming departure times for [The Rapid](https://ww
 
 Installation
 ------------
-
 [Download the ridetherapid.alfredworfklow](https://github.com/mixedfeelings/ridetherapid/blob/master/workflow/ridetherapid.alfredworkflow?raw=true "download") and double click to open or manually drag to the worfklows tab of Alfred's preferences pane.
 
 Usage
@@ -20,3 +19,9 @@ Ride the Rapid uses the keyword "rtr" to browse The Rapid's schedule of upcoming
 ![Main menu](doc/screenshot-3.png?raw=true)
 
 
+Roadmap
+------------
+* incorporate stop data from [data.grcity.us](http://data.grcity.us/dataset?q=gtfs "data")
+* search for stops directly, with validation, rather than browse
+		ex. "rtr 7979"
+* specify alert timing for reminder
