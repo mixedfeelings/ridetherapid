@@ -1,6 +1,6 @@
 # Ride the Rapid
 
-Alfred workflow for browsing upcoming departure times for The Rapid, the bus system in Grand Rapids, MI
+Alfred workflow for browsing upcoming departure times for [The Rapid](https://www.ridetherapid.org/ "The Rapid"), the bus system in Grand Rapids, MI
 
 ![Main menu](doc/screenshot-1.png?raw=true)
 
