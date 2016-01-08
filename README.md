@@ -8,7 +8,7 @@ Alfred workflow for browsing upcoming departure times for The Rapid, the bus sys
 Installation
 ------------
 
-Download the ridetherapid.alfredworfklow from the workflow folder above and double click or manually drag to the worfklows tab of Alrfred's preference pane.
+[Click here to download the ridetherapid.alfredworfklow](https://github.com/mixedfeelings/ridetherapid/blob/master/workflow/ridetherapid.alfredworkflow?raw=true "download")from the workflow folder above and double click or manually drag to the worfklows tab of Alrfred's preference pane.
 
 Usage
 ------------
